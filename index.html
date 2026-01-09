@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Bakery - Artisan Baked Goods</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-logo">The Bakery</a>
+      <ul class="navbar-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="btn btn-hero">Order Now</button></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Order Now</button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img
+        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1920&q=80"
+        alt="Fresh baked bread"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-subtitle animate-fade-in" style="animation-delay: 0.2s">Artisan Bakery</span>
+      <h1 class="hero-title animate-fade-in" style="animation-delay: 0.4s">
+        Baked with
+        <span>Love & Passion</span>
+      </h1>
+      <p class="hero-description animate-fade-in" style="animation-delay: 0.6s">
+        Discover the art of traditional baking. Every loaf tells a story,
+        every pastry is crafted with care using time-honored recipes.
+      </p>
+      <div class="hero-buttons animate-fade-in" style="animation-delay: 0.8s">
+        <a href="#menu" class="btn btn-hero btn-lg">Explore Our Menu</a>
+        <a href="#about" class="btn btn-outline btn-lg">Our Story</a>
+      </div>
+    </div>
+
+    <!-- <div class="scroll-indicator animate-fade-in" style="animation-delay: 1.2s">
+      <div class="scroll-indicator-inner">
+        <div class="scroll-indicator-dot"></div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- FEATURED SECTION -->
+  <section class="featured" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fresh Daily</span>
+        <h2 class="section-title">Our Favorites</h2>
+        <p class="section-description">
+          Each creation is handcrafted every morning using the finest ingredients
+          and traditional techniques passed down through generations.
+        </p>
+      </div>
+
+      <div class="featured-grid">
+        <div class="featured-item animate-fade-in" style="animation-delay: 0.2s">
+          <div class="featured-image-container">
+            <img
+              src="Cakes pics/cake1.jpeg"
+              alt="Butter Croissant"
+            />
+            <div class="price-tag"><span>$4.50</span></div>
+          </div>
+          <div class="featured-content">
+            <h3 class="featured-name">Birthday Cakes</h3>
+            <p class="featured-description">Flaky, golden layers of pure buttery bliss</p>
+          </div>
+        </div>
+
+        <div class="featured-item animate-fade-in" style="animation-delay: 0.3s">
+          <div class="featured-image-container">
+            <img
+              src="Cakes pics/cupcake1.jpeg"
+              alt="Artisan Sourdough"
+            />
+            <div class="price-tag"><span>$8.00</span></div>
+          </div>
+          <div class="featured-content">
+            <h3 class="featured-name">Vanilla Cupcakes</h3>
+            <p class="featured-description">48-hour fermented with our century-old starter</p>
+          </div>
+        </div>
+
+        <div class="featured-item animate-fade-in" style="animation-delay: 0.4s">
+          <div class="featured-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&q=80"
+              alt="Chocolate Chip Cookies"
+            />
+            <div class="price-tag"><span>$3.00</span></div>
+          </div>
+          <div class="featured-content">
+            <h3 class="featured-name">Chocolate Chip Cookies</h3>
+            <p class="featured-description">Crisp edges, gooey center, pure comfort</p>
+          </div>
+        </div>
+
+        <div class="featured-item animate-fade-in" style="animation-delay: 0.5s">
+          <div class="featured-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600&q=80"
+              alt="Cinnamon Rolls"
+            />
+            <div class="price-tag"><span>$5.50</span></div>
+          </div>
+          <div class="featured-content">
+            <h3 class="featured-name">Cinnamon Rolls</h3>
+            <p class="featured-description">Warm swirls topped with cream cheese frosting</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-tag">Our Story</span>
+          <h2 class="about-title">
+            A Tradition of
+            <span>Excellence</span>
+          </h2>
+
+          <p class="about-text">
+            For over three generations, our family has been dedicated to the craft of
+            artisan baking. What started as a small corner bakery has grown into a
+            beloved destination for those who appreciate the art of traditional baking.
+          </p>
+          <p class="about-text">
+            We believe in slow fermentation, quality ingredients, and the magic that
+            happens when flour, water, salt, and time come together. Every product
+            that leaves our ovens carries the warmth of our passion.
+          </p>
+
+          <div class="about-btn">
+            <button class="btn btn-primary">Learn More About Us</button>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Years of Tradition</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">30+</div>
+            <div class="stat-label">Daily Fresh Items</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Natural Ingredients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4AM</div>
+            <div class="stat-label">We Start Baking</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" style="padding: 4rem 0;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 3rem;">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-description">
+          We'd love to hear from you. Whether you have a question about our products,
+          custom orders, or anything else, our team is ready to help.
+        </p>
+      </div>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+          </div>
+          <h3>Visit Us</h3>
+          <p>8285 Ibis Club Dr<br />Naples, FL 34104</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+          </div>
+          <h3>Call Us</h3>
+          <p>(239) 269-3520<br />(239) 784-1766</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+          </div>
+          <h3>Email Us</h3>
+          <p>ffulcar@hotmail.com<br />hrehenry29@gmail.com</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3>Opening Hours</h3>
+          <p>Mon-Sat: 7am - 7pm<br />Sunday: 8am - 3pm</p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-form-container">
+          <h2>Send Us a Message</h2>
+
+          <form id="contactForm">
+            <div class="form-group form-row">
+              <div>
+                <label class="form-label" for="name">Your Name</label>
+                <input type="text" id="name" class="form-input" placeholder="John Doe" required />
+              </div>
+              <div>
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" id="email" class="form-input" placeholder="john@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="How can we help you?" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Your Message</label>
+              <textarea id="message" class="form-input" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+
+          <div
+            id="formSuccess"
+            style="display:none; padding:1rem; background: hsla(120, 40%, 50%, 0.1); border-radius: 0.75rem; margin-top: 1rem; text-align: center; color: hsl(120, 40%, 35%);"
+          >
+            ✓ Message sent successfully! We'll get back to you soon.
+          </div>
+        </div>
+
+        <div class="map-container">
+          <h2>Find Us Here</h2>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/place/8285+Ibis+Club+Dr,+Naples,+FL+34104/@26.1514378,-81.7048191,16z/data=!3m1!4b1!4m6!3m5!1s0x88dae2c61d1a418d:0x3add318521433fd2!8m2!3d26.151433!4d-81.7022442!16s%2Fg%2F11cphct3t_?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>The Bakery</h3>
+          <p>Crafting artisan breads and pastries with love since 1974. Every bite tells our story.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Hours
+          </h4>
+          <p>Monday - Friday: 7AM - 7PM</p>
+          <p>Saturday: 8AM - 6PM</p>
+          <p>Sunday: 8AM - 3PM</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+            Visit Us
+          </h4>
+          <p>123 Baker Street</p>
+          <p>San Francisco, CA 94102</p>
+          <div class="phone">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+            <span>(415) 555-0123</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 The Bakery. All rights reserved.</p>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </footer>
+</body>
+</html>
