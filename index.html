@@ -20,7 +20,7 @@
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="#" class="navbar-logo">The Bakery</a>
+      <a href="#" class="navbar-logo">The Ramirez Bakery</a>
       <ul class="navbar-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#menu">Menu</a></li>
@@ -48,21 +48,21 @@
   <section class="hero" id="home">
     <div class="hero-bg">
       <img
-        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1920&q=80"
+        src="Cakes pic/Portada-familiar.jpeg"
         alt="Fresh baked bread"
       />
       <div class="hero-overlay"></div>
     </div>
 
     <div class="hero-content">
-      <span class="hero-subtitle animate-fade-in" style="animation-delay: 0.2s">Artisan Bakery</span>
+      <span class="hero-subtitle animate-fade-in" style="animation-delay: 0.2s">Fanny's Bakery</span>
       <h1 class="hero-title animate-fade-in" style="animation-delay: 0.4s">
         Baked with
         <span>Love & Passion</span>
       </h1>
       <p class="hero-description animate-fade-in" style="animation-delay: 0.6s">
-        Discover the art of traditional baking. Every loaf tells a story,
-        every pastry is crafted with care using time-honored recipes.
+        Discover the art of traditional baking. Every cake tells a story,
+        every pastry is crafted with care recipes.
       </p>
       <div class="hero-buttons animate-fade-in" style="animation-delay: 0.8s">
         <a href="#menu" class="btn btn-hero btn-lg">Explore Our Menu</a>
@@ -145,10 +145,17 @@
 
         <div class="featured-item animate-fade-in" style="animation-delay: 0.5s">
           <div class="featured-image-container">
-            <img
-              src="Cakes pic/cheesecake3.jpeg"
-              alt="Cheesecake"
-            />
+            <div class="carousel" data-carousel>
+              <button class="carousel-btn prev" type="button" aria-label="Previous image" data-prev>‹</button>
+
+              <div class="carousel-track" data-track>
+                <img src="Cakes pic/cheesecake1.jpeg" alt="Birthday Cakes 1"/>
+                <img src="Cakes pic/cheesecake2.jpeg" alt="Birthday Cakes 2"/>
+                <img src="Cakes pic/cheesecake3.jpeg" alt="Birthday Cakes 3"/>
+              </div>
+
+              <button class="carousel-btn next" type="button" aria-label="Next image" data-next>›</button>
+            </div>
             <div class="price-tag"><span>$5.50</span></div>
           </div>
           <div class="featured-content">
@@ -172,13 +179,13 @@
           </h2>
 
           <p class="about-text">
-            For over three generations, our family has been dedicated to the craft of
-            artisan baking. What started as a small corner bakery has grown into a
+            For over 10+ years, our family has been dedicated to the craft of
+            dominican baking. What started as a small home bakery has grown into a
             beloved destination for those who appreciate the art of traditional baking.
           </p>
           <p class="about-text">
             We believe in slow fermentation, quality ingredients, and the magic that
-            happens when flour, water, salt, and time come together. Every product
+            happens when we all get together to bake and make wonder for other's to enjoy. Every product
             that leaves our ovens carries the warmth of our passion.
           </p>
 
@@ -189,8 +196,8 @@
 
         <div class="stats-grid">
           <div class="stat-card">
-            <div class="stat-number">50+</div>
-            <div class="stat-label">Years of Tradition</div>
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years of Baking</div>
           </div>
           <div class="stat-card">
             <div class="stat-number">30+</div>
@@ -201,7 +208,7 @@
             <div class="stat-label">Natural Ingredients</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">4AM</div>
+            <div class="stat-number">9AM</div>
             <div class="stat-label">We Start Baking</div>
           </div>
         </div>
@@ -260,7 +267,7 @@
             </svg>
           </div>
           <h3>Opening Hours</h3>
-          <p>Mon-Sat: 7am - 7pm<br />Sunday: 8am - 3pm</p>
+          <p>Mon-Sat: 10am - 7pm<br />Sunday: 3am - 6pm</p>
         </div>
       </div>
 
@@ -321,7 +328,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>The Bakery</h3>
+          <h3>The Ramirez Bakery</h3>
           <p>Crafting artisan breads and pastries with love since 1974. Every bite tells our story.</p>
         </div>
 
@@ -332,9 +339,9 @@
             </svg>
             Hours
           </h4>
-          <p>Monday - Friday: 7AM - 7PM</p>
-          <p>Saturday: 8AM - 6PM</p>
-          <p>Sunday: 8AM - 3PM</p>
+          <p>Monday - Friday: 10AM - 7PM</p>
+          <p>Saturday: 2PM - 6PM</p>
+          <p>Sunday: 3AM - 6PM</p>
         </div>
 
         <div class="footer-section">
@@ -345,19 +352,19 @@
             </svg>
             Visit Us
           </h4>
-          <p>123 Baker Street</p>
-          <p>San Francisco, CA 94102</p>
+          <p>8285 Ibis Club Dr</p>
+          <p>Naples, FL 34104</p>
           <div class="phone">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
             </svg>
-            <span>(415) 555-0123</span>
+            <span>(239) 784-1766</span>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2024 The Bakery. All rights reserved.</p>
+        <p>&copy; 2026 The Ramirez Bakery. All rights reserved.</p>
       </div>
     </div>
 
