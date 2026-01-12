@@ -59,3 +59,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// ===== Featured card carousels =====
+document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+  const track = carousel.querySelector("[data-track]");
+  const prevBtn = carousel.querySelector("[data-prev]");
+  const nextBtn = carousel.querySelector("[data-next]");
+  const slides = Array.from(track.querySelectorAll("img"));
+
+  let index = 0;
+
+  function update() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  nextBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    index = (index + 1) % slides.length;
+    update();
+  });
+
+  prevBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    index = (index - 1 + slides.length) % slides.length;
+    update();
+  });
+
+  update();
+});
+
